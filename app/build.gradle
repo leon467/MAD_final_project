@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.intellize.nb_food_delervery"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //firebase database
+    implementation 'com.google.firebase:firebase-database:19.5.0'
+
+    //Glide for image loading
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Cardview
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //Shrimmer for loading
+    implementation 'com.facebook.shimmer:shimmer:0.4.0@aar'
+
+    //Recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    def lifecycle_version = "2.2.0"
+    def arch_version = "2.1.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    // LifeCycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+    //Room
+    def room_version = "2.2.0-rc01"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //lottie Animation
+    implementation 'com.airbnb.android:lottie:3.3.1'
+
+    //Stetho
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+
+    //elegant
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+    //rating bars
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.0'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+
+
+    //custom snake bar
+    implementation 'com.github.matecode:Snacky:1.1.5'
+
+
+    //JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    implementation 'com.github.michaldrabik:TapBarMenu:1.0.6'
+
+}

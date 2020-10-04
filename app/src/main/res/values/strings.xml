@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have an account ?</string>
+    <string name="create_account">Create your account</string>
+    <string name="fname">First name</string>
+    <string name="lname">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign up</string>
+    <string name="submit">Submit</string>
+    <string name="review">Enter your review here</string>
+    <string name="fetching_data">Fetching data</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="rate">Rate</string>
+    <string name="empty_list">Oops ! No records found..</string>
+    <string name="view_cart">VIEW CART</string>
+    <string name="your_cart">Your cart</string>
+    <string name="total_qty">Total item qty</string>
+    <string name="total_amount">Total amount</string>
+    <string name="checkout">Checkout</string>
+    <string name="cash">Cash on delivery</string>
+    <string name="card">Card Payment</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="driver_name">Driver name</string>
+    <string name="vehicle">Vehicle number</string>
+    <string name="save">Save</string>
+    <string name="card_name">Card Name</string>
+    <string name="bank">Bank</string>
+    <string name="card_number">Card Number</string>
+    <string name="saved_drivers">Saved Drivers</string>
+    <string name="saved_cards">Saved Cards</string>
+</resources>

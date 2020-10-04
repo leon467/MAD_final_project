@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".view.activity.LoginActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_user" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_fname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="@string/fname"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_lname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="@string/lname"
+                android:paddingLeft="20dp" />
+
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="20dp" />
+
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:hint="@string/address"
+                android:maxLength="50"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_style"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_style"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.activity.OrderRatingActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        app:lottie_fileName="ratings.json"
+        app:lottie_loop="false"
+        app:lottie_repeatMode="reverse" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:id="@+id/ll_rate">
+
+       <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/rating_bar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:srb_clearRatingEnabled="true"
+           app:srb_clickable="true"
+           app:srb_drawableEmpty="@drawable/ic_star_off"
+           app:srb_drawableFilled="@drawable/ic_star_on"
+           app:srb_isIndicator="false"
+           app:srb_minimumStars="0"
+           app:srb_numStars="5"
+           app:srb_rating="0"
+           app:srb_scrollable="true"
+           app:srb_starHeight="30dp"
+           app:srb_starWidth="30dp"
+           app:srb_stepSize="1" />
+
+
+       <EditText
+           android:layout_marginTop="30dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:maxLength="500"
+           android:maxLines="3"
+           android:padding="15dp"
+           android:hint="@string/review"
+           android:background="@drawable/edit_text_style"
+           android:id="@+id/txt_review"/>
+
+
+       <LinearLayout
+           android:id="@+id/ll_submit"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/edit_text_height"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/btn_style"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:text="@string/submit"
+               android:textColor="@color/colorWhite"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>

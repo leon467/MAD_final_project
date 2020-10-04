@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/lbl_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fetching_data"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fetching_data"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/changeQty"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    app:backGroundColor="@color/colorGreen"
+                    app:initialNumber="1" />
+
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_delete"
+                    android:padding="5dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

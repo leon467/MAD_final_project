@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "248243564853",
+    "firebase_url": "https://nbfooddelervery.firebaseio.com",
+    "project_id": "nbfooddelervery",
+    "storage_bucket": "nbfooddelervery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248243564853:android:8390e65eab0539ec761c7c",
+        "android_client_info": {
+          "package_name": "com.intellize.nb_food_delervery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248243564853-k4ulpdg49j1cm65h238d4o2jo2i7cggh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intellize.nb_food_delervery",
+            "certificate_hash": "1ad6990ee61f370d1198ef69482b20cbf3aa9599"
+          }
+        },
+        {
+          "client_id": "248243564853-itls85164vco56ma0lmm658o9m92gh4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnsSRh01zK6HerNFRCFfAZqU4Qykl8nXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248243564853-itls85164vco56ma0lmm658o9m92gh4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
